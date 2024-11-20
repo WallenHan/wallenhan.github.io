@@ -46,11 +46,8 @@ jobs:
           
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
-        
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-        
+        uses: actions/configure-pages@v5       
+ 
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -58,7 +55,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://wallenhan.github.io/blog/"
             
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
