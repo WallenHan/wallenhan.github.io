@@ -55,7 +55,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "https://wallenhan.github.io/blog/"
+            --baseURL "${{ steps.deployment.outputs.page_url }}/"
             
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
