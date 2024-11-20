@@ -13,20 +13,10 @@ DefaultContentLanguage: zh-cn
 hasCJKLanguage: true
 
 languages:
-  en:
-    languageName: English
-    title: wallen's blog
-    weight: 1
-    params:
-      sidebar:
-        subtitle: Note every interesting things.
   zh-cn:
     languageName: 中文
-    title: wallen's blog
+    title: wallen 的博客
     weight: 2
-    params:
-      sidebar:
-        subtitle: 记录工作生活的点点滴滴。
 
 services:
   # Change it to your Disqus shortname before using
@@ -48,7 +38,7 @@ params:
     - post
   featuredImageField: image
   rssFullContent: true
-  favicon: /favicon.png # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+  favicon: ./favicon.png # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
   footer:
     since: 2024
@@ -60,7 +50,7 @@ params:
 
   sidebar:
     emoji: 🍥
-    subtitle: 一个来自中国内陆城市喜欢 RC的全栈工程师，🧑‍💻。
+    subtitle: 来自中国内陆城市喜欢 RC的全栈工程师，🧑‍💻。
     avatar:
       enabled: true
       local: true
@@ -76,89 +66,8 @@ params:
 
   comments:
     enabled: false
-    provider: disqus
+    provider:
 
-    disqusjs:
-      shortname:
-      apiUrl:
-      apiKey:
-      admin:
-      adminLabel:
-
-    utterances:
-      repo:
-      issueTerm: pathname
-      label:
-
-    beaudar:
-      repo:
-      issueTerm: pathname
-      label:
-      theme:
-
-    remark42:
-      host:
-      site:
-      locale:
-
-    vssue:
-      platform:
-      owner:
-      repo:
-      clientId:
-      clientSecret:
-      autoCreateIssue: false
-
-    # Waline client configuration see: https://waline.js.org/en/reference/component.html
-    waline:
-      serverURL:
-      lang:
-      pageview:
-      emoji:
-        - https://unpkg.com/@waline/emojis@1.0.1/weibo
-      requiredMeta:
-        - name
-        - email
-        - url
-      locale:
-        admin: Admin
-        placeholder:
-
-    twikoo:
-      envId:
-      region:
-      path:
-      lang:
-
-    # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
-    cactus:
-      defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
-      serverName: "cactus.chat"
-      siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
-
-    giscus:
-      repo:
-      repoID:
-      category:
-      categoryID:
-      mapping:
-      lightTheme:
-      darkTheme:
-      reactionsEnabled: 1
-      emitMetadata: 0
-
-    gitalk:
-      owner:
-      admin:
-      repo:
-      clientID:
-      clientSecret:
-      proxy:
-
-    cusdis:
-      host:
-      id:
-  
   widgets:
     homepage:
       - type: search
