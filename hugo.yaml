@@ -15,7 +15,7 @@ hasCJKLanguage: true
 languages:
   zh-cn:
     languageName: 中文
-    title: wallen 的博客
+    title: wallen
     weight: 2
 
 services:
@@ -49,7 +49,7 @@ params:
     lastUpdated: Jan 02, 2006 15:04 MST
 
   sidebar:
-    emoji: 🍥
+    emoji: 🎉
     subtitle: 来自中国内陆城市喜欢 RC的全栈工程师，🧑‍💻。
     avatar:
       enabled: true
