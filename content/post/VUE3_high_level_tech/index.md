@@ -1,6 +1,9 @@
 +++
 date = '2024-11-12T15:18:49+08:00'
 draft = false
+categories: 
+- 前端技术
+- Vue3
 title = 'Vue 3 核心特性与应用技巧全解析'
 +++
 
