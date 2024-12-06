@@ -14,7 +14,7 @@ Vue 3 作为中国大陆前端开发领域被广泛采用的前端框架，为�
  
 二、组件过渡效果
  
-借助 <transition> 组件，结合 CSS 过渡或动画，能够轻松为组件添加过渡效果。可以动态绑定过渡相关属性，如 :enter-active-class 和 :leave-active-class ，依据特定条件返回不同的动画类名，从而灵活控制组件的过渡表现。
+借助 `<transition>` 组件，结合 CSS 过渡或动画，能够轻松为组件添加过渡效果。可以动态绑定过渡相关属性，如 `:enter-active-class` 和 `:leave-active-class` ，依据特定条件返回不同的动画类名，从而灵活控制组件的过渡表现。
  
 三、获取当前路由信息
  
@@ -26,7 +26,7 @@ Vue 3 作为中国大陆前端开发领域被广泛采用的前端框架，为�
  
 五、v-model 双向数据绑定
  
-在 Vue 3 组件中， v-model 实际上是 :modelValue （用于接收值）和 @update:modelValue （用于更新值）的语法糖。我们能够自定义传递和更新的属性名，借助 v-model 的修饰符，如 v-model:value 来指定。在组件内部，要正确处理 props 和 $emit ，尤其对于复杂数据类型的更新，需采用恰当的方式以确保数据的正确流动与响应式更新。
+在 Vue 3 组件中， v-model 实际上是 `:modelValue` （用于接收值）和 `@update:modelValue` （用于更新值）的语法糖。我们能够自定义传递和更新的属性名，借助 v-model 的修饰符，如 `v-model:value` 来指定。在组件内部，要正确处理 props 和 $emit ，尤其对于复杂数据类型的更新，需采用恰当的方式以确保数据的正确流动与响应式更新。
  
 六、动态插槽
  
@@ -72,5 +72,20 @@ Vue 3 作为中国大陆前端开发领域被广泛采用的前端框架，为�
  
 十五、异步组件
  
-异步组件是 Vue 3 中优化项目初始加载性能的重要特性。使用 defineAsyncComponent 函数来定义异步组件，例如 const AsyncComponent = defineAsyncComponent(() => import('./AsyncComponent.vue')) ，然后在组件模板中像使用普通组件一样使用它。还可以为异步组件提供加载状态和加载失败状态的自定义处理，通过对象形式的参数来定义，指定 loadingComponent （加载中时显示的组件）和 errorComponent （加载失败时显示的组件），如 const AsyncComponent = defineAsyncComponent({ loader: () => import('./AsyncComponent.vue'), loadingComponent: LoadingComponent, errorComponent: ErrorComponent }); 。此外，异步组件在路由懒加载中也有很好的应用，在路由配置中，如 { path: '/async-route', name: 'AsyncRoute', component: () => import('@/views/AsyncRoute.vue') } ，能够在访问特定路由时才加载对应的组件，提升应用的性能与响应速度。
+异步组件是 Vue 3 中优化项目初始加载性能的重要特性。使用 defineAsyncComponent 函数来定义异步组件，例如 
+`const AsyncComponent = defineAsyncComponent(() => import('./AsyncComponent.vue'))`，然后在组件模板中像使用普通组件一样使用它。还可以为异步组件提供加载状态和加载失败状态的自定义处理，通过对象形式的参数来定义，指定 `loadingComponent` （加载中时显示的组件）和 `errorComponent` （加载失败时显示的组件），如 
+```
+const AsyncComponent = defineAsyncComponent({
+loader: () => import('./AsyncComponent.vue'),
+ loadingComponent: LoadingComponent, errorComponent: ErrorComponent
+});
+```
+此外，异步组件在路由懒加载中也有很好的应用，在路由配置中，如 
+```
+{
+ path: '/async-route', name: 'AsyncRoute',
+ component: () => import('@/views/AsyncRoute.vue')
+}
+```
+能够在访问特定路由时才加载对应的组件，提升应用的性能与响应速度。
  
