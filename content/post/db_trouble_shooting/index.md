@@ -1,7 +1,7 @@
 +++  
 date = '2024-12-10T15:52:09+08:00'
 title = '数据库原理、常见问题和处理方式(以mysql为例)'  
-categories  = ['ServerSide']   
+categories  = ['ServerTech']   
 tags = ['mysql']  
 +++
 
