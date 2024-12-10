@@ -4,6 +4,6 @@ description: "前端技术分类"
 slug: "FrontendTech"
 image: "frontend-development.png"
 style:
-    background: "#2a9d8f"
+    background: "#3A3782"
     color: "#fff"
 ---
