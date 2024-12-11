@@ -21,12 +21,12 @@ win10 注意可能会出现缺少动态链接库的问题，验证方法，进�
 相同的构建环境执行了两遍验证，构建过程下载的依赖资源已经在本地了，没有下载过程，纯本地编译构建。
 
 ```bash
- mvn.cmd  clean package -s .\settings.xml -DskipTests=true
+ mvn.cmd  clean package -s .\settings.xml 
 ```
 ![mvn-test-image.png](maven-package-test.png)
 
 ```bash
-mvnd.cmd clean package   -s .\settings.xml -DskipTests=true
+mvnd.cmd clean package   -s .\settings.xml 
 ```
 ![mvnd-test-image.png](mvnd-package-test.png)
 
