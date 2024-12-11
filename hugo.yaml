@@ -77,7 +77,7 @@ params:
       proxy:
     
     vssue:
-      platform: Github
+      platform: github
       owner: WallenHan
       repo: wallenhan.github.io
       clientId: Ov23ctPQD2T7YhYUGS1M
