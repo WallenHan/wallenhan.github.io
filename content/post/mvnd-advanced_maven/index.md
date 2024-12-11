@@ -6,7 +6,7 @@ tags = ['构建']
 +++
 
 ## 1. 安装mvnd  
-下载地址 [https://github.com/apache/maven-mvnd/releases/download/0.7.1/mvnd-0.7.1-windows-amd64.zip](https://github.com/apache/maven-mvnd/releases/download/0.7.1/mvnd-0.7.1-windows-amd64.zip)
+下载地址 [https://github.com/apache/maven-mvnd/releases/download/0.7.1/mvnd-0.7.1-windows-amd64.zip](https://github.com/apache/maven-mvnd/releases/download/0.7.1/mvnd-0.7.1-windows-amd64.zip)  
 **前置条件：** 0.7.1 版本需要 java 11，系统需要有 JAVA_HOME 环境变量 或者在解压目录 conf 目录中的 mvnd.properties  149行配置 java.home；
 
 解压至任意目录，将 bin 目录添加到环境变量，即可到处使用了；
