@@ -23,12 +23,12 @@ win10 注意可能会出现缺少动态链接库的问题，验证方法，进�
 ```bash
  mvn.cmd  clean package -s .\settings.xml -DskipTests=true
 ```
-![mvn-test-image.png](./maven-package-test.png)
+![mvn-test-image.png](maven-package-test.png)
 
 ```bash
 mvnd.cmd clean package   -s .\settings.xml -DskipTests=true
 ```
-![mvnd-test-image.png](./mvnd-package-test.png)
+![mvnd-test-image.png](mvnd-package-test.png)
 
 
 ## 结论
