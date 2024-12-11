@@ -71,7 +71,7 @@ params:
     gitalk:
             owner: wallenhan
             admin: [‘wallenhan’]
-            repo: https://github.com/WallenHan/wallenhan.github.io
+            repo: wallenhan.github.io
             clientID: Ov23ctPQD2T7YhYUGS1M
             clientSecret: e04b4c2be9e53f5952105686259e942f35ad3796
             proxy:
