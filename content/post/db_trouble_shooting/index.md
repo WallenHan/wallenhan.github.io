@@ -426,6 +426,7 @@ RECORD LOCKS space id 3 page no 4 n bits 72 index `PRIMARY` of table `test`.`ord
 Record lock, heap no 2 PHYSICAL RECORD: n_fields 5; compact format; info bits 32
  0: len 4; hex 80000001; asc     ;;
  1: len 6; hex 000002745b01; asc    t
+```
 
 ## 发生了死锁如何解决  
 ### 如何解决死锁问题
