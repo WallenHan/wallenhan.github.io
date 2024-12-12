@@ -67,15 +67,6 @@ params:
   comments:
     enabled: true
     provider: vssue
-
-    gitalk:
-      owner: WallenHan
-      admin: WallenHan
-      repo: wallenhan.github.io
-      clientID: Ov23ctPQD2T7YhYUGS1M
-      clientSecret: 
-      proxy:
-    
     vssue:
       platform: github
       owner: WallenHan
