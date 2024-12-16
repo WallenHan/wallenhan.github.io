@@ -5,6 +5,7 @@ menu:
         weight: -90
         params:
             icon: user
+comments: false
 ---
 
 # 博主个人介绍
